@@ -1,9 +1,9 @@
 import sys
 input = sys.stdin.readline
 n = int(input())
-def f(x):
-    return 3*x*x - 3*x + 1
-i = 1
-while f(i) < n:
-    i+=1
-print(i) 
+layer = 1 # 고리번호
+end = 1 # 고리의 끝 번호
+while n > end:
+    end += 6*layer
+    layer += 1
+print(layer)
