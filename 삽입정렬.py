@@ -9,3 +9,5 @@ for i in range(1, len(arr)): # 두 번째 원소부터 시작
         arr[j+1] = key #올바른 위치에 삽입할 값 삽입
 print(arr)
     
+    
+
