@@ -1,0 +1,6 @@
+arr = [29, 10, 14, 37, 13]
+for i in range(len(arr)-1): # 총 반복 횟수 == len(arr) - 1회
+    for j in range(len(arr)-1-i): # j = 실제 비교 대상자 즉, 최대 len(arr) - 2회까지만 비교
+        if arr[j] > arr[j+1]:
+            arr[j+1],arr[j] = arr[j],arr[j+1]           
+print(arr)
