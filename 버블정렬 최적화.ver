@@ -1,0 +1,10 @@
+arr = [29, 10, 14, 37, 13]
+for i in range(len(arr)-1): 
+    swaped = False
+    for j in range(len(arr)-1-i):
+        if arr[j] > arr[j+1]:
+            arr[j+1],arr[j] = arr[j],arr[j+1]           
+            swaped = True
+    if not swaped: # 변화가 없으면 정렬완료
+        break
+print(arr)
