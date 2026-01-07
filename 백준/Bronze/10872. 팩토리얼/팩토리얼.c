@@ -1,20 +1,13 @@
 #include<stdio.h>
-int factorial(int);
 int main()
 {
-	int a;
-	int b;
-	scanf("%d", &a);
-	b = factorial(a);
-	printf("%d", b);
-
-}
-int factorial(int n)
-{
-	
-	if (n <= 1)
-		return 1;
-	else
-		return n * factorial(n - 1);
-	
+	int num;
+	int sum = 1;
+	scanf("%d", &num);
+	for (int i = 1; i <= num; i++)
+	{
+		sum *= i;
+	}
+	printf("%d", sum);
+	return 0;
 }
